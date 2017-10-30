@@ -24,3 +24,9 @@ Blocks are standalone chunks of code that should be modular and contain their ow
 
 https://css-tricks.com/bem-101/
 
+
+HOW TO REFACTOR CSS
+
+ 
+css dig
+
