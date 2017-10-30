@@ -29,4 +29,26 @@ HOW TO REFACTOR CSS
 
  
 css dig
+https://www.hongkiat.com/blog/code-optimization-series-refactoring-css/
+
+1. Conduct an Initial Audit
+2. Set Up a Manageable Plan
+3. Track Progress
+4. Stick to a Coding Style Guide
+5. Set Up a Coherent File Structure
+6. Get Rid of Unused and Duplicate Rules
+7. Reduce Specificity
+8. Weed Out !important Rules
+9. Clean Out Magic Numbers and Hard Coded Values
+10. Refactor Units and Values
+
+
+
+
+
+
+
+
+
+
 
