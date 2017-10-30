@@ -25,7 +25,7 @@ Media queries are the most powerful tool for doing this. Let's take our layout t
 
 Mobile First: Begin the design process with mobile devices in mind, expanding out to tablet and desktop sizes.
 
-
+http://metamonks.com/wp-content/uploads/responsive-vs-mobile-first-webdesign-022-1024x689.png
 
 
 
