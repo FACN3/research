@@ -5,7 +5,7 @@ Responsive vs Mobile-first design
 "Responsive Design" is the strategy of making a site that "responds" to the browser and device that it is being shown on... by looking awesome no matter what.
 
 Media queries are the most powerful tool for doing this. Let's take our layout that uses percent widths and have it display in one column when the browser is too small to fit the menu in the sidebar:
-
+```css
 @media screen and (min-width:600px) {
   nav {
     float: left;
@@ -20,7 +20,7 @@ Media queries are the most powerful tool for doing this. Let's take our layout t
     display: inline;
   }
 }
-
+```
 
 
 Mobile First: Begin the design process with mobile devices in mind, expanding out to tablet and desktop sizes.
