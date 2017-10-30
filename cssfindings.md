@@ -5,6 +5,8 @@ Is a naming system for classes within HTML and CSS.
 
 Elements are children of Blocks, denoted by a double underscore "_ _"
 
+Modifiers modify the state of an element or block
+
 Blocks are standalone chunks of code that should be modular and contain their own sets of elements. Think of blocks as headers, sidebars, and footers—they are the major Lego pieces that you put together to build a website.
 
 ```html
@@ -16,4 +18,9 @@ Blocks are standalone chunks of code that should be modular and contain their ow
 6   <input type="password" class="sign-up-form__field">
 7   <input type="submit" class="sign-up-form__button" value="name">
 8 </form> 
+
+
 ```
+
+https://css-tricks.com/bem-101/
+
