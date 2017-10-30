@@ -1,3 +1,34 @@
+Responsive vs Mobile-first design
+
+
+
+"Responsive Design" is the strategy of making a site that "responds" to the browser and device that it is being shown on... by looking awesome no matter what.
+
+Media queries are the most powerful tool for doing this. Let's take our layout that uses percent widths and have it display in one column when the browser is too small to fit the menu in the sidebar:
+
+@media screen and (min-width:600px) {
+  nav {
+    float: left;
+    width: 25%;
+  }
+  section {
+    margin-left: 25%;
+  }
+}
+@media screen and (max-width:599px) {
+  nav li {
+    display: inline;
+  }
+}
+
+
+
+Mobile First: Begin the design process with mobile devices in mind, expanding out to tablet and desktop sizes.
+
+
+
+
+
 BEM
 Block, Element & Modifier
 
@@ -23,32 +54,4 @@ Blocks are standalone chunks of code that should be modular and contain their ow
 ```
 
 https://css-tricks.com/bem-101/
-
-
-HOW TO REFACTOR CSS
-
- 
-css dig
-https://www.hongkiat.com/blog/code-optimization-series-refactoring-css/
-
-1. Conduct an Initial Audit
-2. Set Up a Manageable Plan
-3. Track Progress
-4. Stick to a Coding Style Guide
-5. Set Up a Coherent File Structure
-6. Get Rid of Unused and Duplicate Rules
-7. Reduce Specificity
-8. Weed Out !important Rules
-9. Clean Out Magic Numbers and Hard Coded Values
-10. Refactor Units and Values
-
-
-
-
-
-
-
-
-
-
 
