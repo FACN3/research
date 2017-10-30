@@ -17,5 +17,3 @@ Blocks are standalone chunks of code that should be modular and contain their ow
 7   <input type="submit" class="sign-up-form__button" value="name">
 8 </form> 
 -->
-
-[[https://github.com/username/repository/blob/master/img/button|alt=button example]]
