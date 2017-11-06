@@ -26,6 +26,8 @@ Technique which determines whether our test cases are actually covering the appl
 + You run it alongside the npm test inside the project folder
 + To make it work you need to install it using the command:
 
+
 `npm i nyc -D`
+
 
 <img src="https://files.gitter.im/MarlenAw/VRz9/nyc.PNG" style="width: 700px;"/>
