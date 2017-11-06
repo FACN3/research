@@ -6,6 +6,14 @@
 - What are the security concerns around `Element.innerHTML` and what could you use instead?
 
 
+## JavaScript Event
+
+Things that occur when the user or the browser manipulates a page.
+ (clicking a button, pressing any key, resizing a window, etc…)
+
+## event.preventDefault()
+
+ The event.preventDefault() method stops the default action of an element from happening. For example: Prevent a submit button from submitting a form. Prevent a link from following the URL.
 
 
 - What is a NodeList? How is it different from an Array?
