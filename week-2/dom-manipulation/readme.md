@@ -27,13 +27,14 @@ e.g.
 
 <script>
 document.getElementById("myAnchor").addEventListener("click", function(event){
-    event.preventDefault();
-    window.open("https://www.w3schools.com");
+    event.preventDefault(); //prevent the website from opening on the same window
+    window.open("https://www.w3schools.com"); //open the website in the new window
 });
 </script>
 
 </body>
 </html>
+
 ```
 
 
