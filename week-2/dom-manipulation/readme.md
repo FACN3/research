@@ -28,10 +28,12 @@ var addElement2 = function() {
 
 ## JavaScript Event
 - Things that occur when the user or the browser manipulates a page.
+
   (For example: clicking a button, pressing any key, resizing a window, etc…)
 
 ## What does event.preventDefault() do and why might you use it?
 - The event.preventDefault() method stops the default action of an element from happening. 
+
  (For example: Prevent a submit button from submitting a form. Prevent a link from following the URL.)
 
 e.g.
