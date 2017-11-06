@@ -6,37 +6,25 @@
 - What are the security concerns around `Element.innerHTML` and what could you use instead?
 
 
-## JavaScript Event
+### How would you add a `<li>` element to the start of a `<ul>`?
 
-Things that occur when the user or the browser manipulates a page.
- (clicking a button, pressing any key, resizing a window, etc…)
+We create a function in which we select our list element from the DOM. Then we create a new list element using the createElement() method. Once our new li element is created, we can add text to it or set its attributes (id, class...). 
+Using the appendChild() method we associate our text with the newly created element. Once our li element is created and populated with text and its attributes set, we can append it to the ul element.
 
-## event.preventDefault()
-
- The event.preventDefault() method stops the default action of an element from happening. For example: Prevent a submit button from submitting a form. Prevent a link from following the URL.
-
-e.g.
 ```
-<!DOCTYPE html>
-<html>
-<body>
+var addElement2 = function() {
+  var ul = document.querySelector('.list');
+  var new_li = document.createElement('li');
 
-<a id="myAnchor" href="https://w3schools.com/">Go to W3Schools.com</a>
+  new_li.appendChild(document.createTextNode("This is a third list element"));
+  document.querySelector('.list').appendChild(new_li);
 
-<p>The preventDefault() method will prevent the link above from following the URL.</p>
-
-<script>
-document.getElementById("myAnchor").addEventListener("click", function(event){
-    event.preventDefault(); //prevent the website from opening on the same window
-    window.open("https://www.w3schools.com"); //open the website in the new window
-});
-</script>
-
-</body>
-</html>
+  console.log(ul);
+}
 
 ```
 
+### What is a NodeList? How is it different from an Array?
 
 
 ## NodeLists
@@ -92,3 +80,11 @@ ALL THE OTHERS
 ```
 var divs = Array.prototype.slice.call(document.querySelectorAll('div'));
 ```
+
+### What are the security concerns around `Element.innerHTML` and what could you use instead?
+
+The innerHTML method returns the full markup of the element that was called by it as well as it's child elements. Because text inside html tags can be interpreted as code, problems can arise when it become possible to insert arbitrary javascript code through client-side methods (Cross-Site scripting vulnerabilities).
+
+To prevent those risks, it is better to use a method like textContent that can add/replace/remove the content of DOM elements by parsing the html and returning only raw text. This makes it very difficult for someone to insert arbitrary code into the webpage.
+
+
