@@ -11,6 +11,8 @@
 We create a function in which we select our list element from the DOM. Then we create a new list element using the createElement() method. Once our new li element is created, we can add text to it or set its attributes (id, class...). 
 Using the appendChild() method we associate our text with the newly created element. Once our li element is created and populated with text and its attributes set, we can append it to the ul element.
 
+(see example.html and functions.js)
+
 ```
 var addElement2 = function() {
   var ul = document.querySelector('.list');
@@ -121,4 +123,20 @@ The innerHTML method returns the full markup of the element that was called by i
 
 To prevent those risks, it is better to use a method like textContent that can add/replace/remove the content of DOM elements by parsing the html and returning only raw text. This makes it very difficult for someone to insert arbitrary code into the webpage.
 
+```
+function useless() {
+  //This example doesn't work...
+  var popUp = "<script>alert('I am an annoying alert!')</script>";
+  var title = document.getElementById("title");
+  title.innerHTML = popUp;
+
+}
+
+function notSafe() {
+  // This alert will show...
+  var popUp = "<img src='x' onerror='alert(\"I am an annoying alert!\")'>";
+  var title = document.getElementById("title");
+  title.innerHTML = popUp;
+}
+```
 
