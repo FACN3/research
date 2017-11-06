@@ -124,14 +124,6 @@ The innerHTML method returns the full markup of the element that was called by i
 To prevent those risks, it is better to use a method like textContent that can add/replace/remove the content of DOM elements by parsing the html and returning only raw text. This makes it very difficult for someone to insert arbitrary code into the webpage.
 
 ```
-function useless() {
-  //This example doesn't work...
-  var popUp = "<script>alert('I am an annoying alert!')</script>";
-  var title = document.getElementById("title");
-  title.innerHTML = popUp;
-
-}
-
 function notSafe() {
   // This alert will show...
   var popUp = "<img src='x' onerror='alert(\"I am an annoying alert!\")'>";
