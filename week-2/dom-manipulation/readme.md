@@ -24,6 +24,38 @@ var addElement2 = function() {
 
 ```
 
+### What is a JavaScript Event? What does event.preventDefault() do and why might you use it?
+
+## JavaScript Event
+- Things that occur when the user or the browser manipulates a page.
+  (For example: clicking a button, pressing any key, resizing a window, etc…)
+
+## What does event.preventDefault() do and why might you use it?
+- The event.preventDefault() method stops the default action of an element from happening. 
+ (For example: Prevent a submit button from submitting a form. Prevent a link from following the URL.)
+
+e.g.
+```
+<!DOCTYPE html>
+<html>
+<body>
+
+<a id="myAnchor" href="https://w3schools.com/">Go to W3Schools.com</a>
+
+<p>The preventDefault() method will prevent the link above from following the URL.</p>
+
+<script>
+document.getElementById("myAnchor").addEventListener("click", function(event){
+    event.preventDefault(); //prevent the website from opening on the same window
+    window.open("https://www.w3schools.com"); //open the website in the new window
+});
+</script>
+
+</body>
+</html>
+```
+
+
 ### What is a NodeList? How is it different from an Array?
 
 
