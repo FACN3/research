@@ -27,3 +27,5 @@ Any extra resources you find and think would be useful to your cohort add to the
 ## Week 8
 
 ## Other resources
+
++ [JS30](https://javascript30.com/)
