@@ -48,7 +48,7 @@ If you're struggling with callbacks I would recommend going over this text again
 
 ## Account names
 
-I don't want to display the passwords publicly so just give me a shout on Gitter if you want accesss to any of the following sites :blush:
+I don't want to display the passwords publicly so just give me (@finnhodgkin) a shout on Gitter if you want accesss to any of the following sites :blush:
 
 ### [Front end masters](https://frontendmasters.com/courses/)
 Username: foundersandcoders
