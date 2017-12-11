@@ -22,7 +22,13 @@ HTTPS takes the well-known and understood HTTP protocol and simply layers a SSL/
 
  ***SSL*** *(Secure Sockets Layer)* - it's the technology for keeping an internet connection secure and safeguarding any sensitive data.
 
- ***SSL*** *(Transport Layer Security)* - an updated, more secure version of SSL.
+ + SSL certificates have a key pair: a public and a private key.
+
+  ***These keys work together to establish an encrypted connection.*** The certificate also contains what is called the “subject,” which is the identity of the certificate/website owner.
+
+ + To get a certificate, you must create a Certificate Signing Request (CSR) on your server. This process creates a private key and public key on your server. The CSR data file that you send to the SSL Certificate issuer (called a Certificate Authority or CA) contains the public key. ***The CA uses the CSR data file to create a data structure to match your private key without compromising the key itself.*** The CA never sees the private key.
+
+***TLS*** *(Transport Layer Security)* - an updated, more secure version of SSL.
 
 ***Some side notes:***
 + We still refer to our security certificates as SSL because it is a more commonly used term.
