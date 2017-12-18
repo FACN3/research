@@ -56,7 +56,9 @@ fetch('some/api/getData.json')
     console.log(err);  
   });
 ```
+--> Usage of Fetch
 
+It can fully replace old XMLHttpRequest. The first parameter of the fetch is the requested URL. We can also pass a second parameter which is essentially a configuration object. In this configuration object, we can specify different options like HTTP Method Type, Headers of the Request, body of the request etc. Let’s look at how to make a post request with Fetch.
 
 --> Downside of Fetch:
 1. no way to set a timeout yet
